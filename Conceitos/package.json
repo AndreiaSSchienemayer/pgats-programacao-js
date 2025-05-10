@@ -1,0 +1,16 @@
+{
+  "name": "conceitos",
+  "version": "1.0.0",
+  "description": "//Este repositório contém os conceitos e exercícios da matéria de Programação para Automação de Testes da Pós de Automação de Testes.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "mocha": "^11.2.2"
+  }
+}
