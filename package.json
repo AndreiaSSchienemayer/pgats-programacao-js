@@ -1,9 +1,15 @@
 {
   "type": "module",
-  "scripts": {
-    "test": "mocha"
-  },
   "devDependencies": {
     "mocha": "^11.2.2"
+  },
+  "scripts": {
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
+    "test:mutation": "npx stryker run",
+    "start": "lite-server",
+    "lint": "npm run lint:ts && npm run lint:format",
+    "lint:ts": "tsc -b jsconfig.json",
+    "lint:format": "prettier --check --ignore-path .gitignore .",
+    "e2e": "npx playwright test"
   }
 }
