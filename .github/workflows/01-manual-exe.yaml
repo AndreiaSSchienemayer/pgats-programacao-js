@@ -34,6 +34,14 @@ jobs:
       - name: Instalar dependências
         run: yarn
 
+      # Instala dependências
+      - name: Instalar dependências
+        run: yarn install
+
+      # Instala o Playwright (adiciona ao projeto)
+      - name: Instalar Playwright
+        run: yarn add -D playwright
+
       # Instalação do Playwright
       - name: Instalar Playwright
         run: yarn playwright install
