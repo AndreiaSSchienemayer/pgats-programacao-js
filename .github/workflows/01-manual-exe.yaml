@@ -16,7 +16,7 @@ jobs:
     # Máquina que o job vai executar
     runs-on: ubuntu-latest
 
-    # Passos do script de build
+    # Passos do script de build s
     steps:
       # Clone do projeto
       - name: Clonar projeto
