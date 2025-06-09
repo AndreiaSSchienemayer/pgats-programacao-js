@@ -41,5 +41,5 @@ jobs:
         run: yarn playwright install
 
       # Executar os testes e2e
-      - name: Executar Testes E2E
-        run: yarn run e2e
+      - name: Executar Testes E2E com Mocha
+        run: yarn mocha-test
