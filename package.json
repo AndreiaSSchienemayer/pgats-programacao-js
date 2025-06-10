@@ -12,6 +12,6 @@
     "lint:ts": "tsc -b jsconfig.json",
     "lint:format": "prettier --check --ignore-path .gitignore .",
     "e2e": "playwright test Testes/01-testes.js",
-    "mocha-test": "mocha Testes/01-testes.js"
+    "mocha-test": "npx mocha Testes/01-testes.js"
   }
 }
