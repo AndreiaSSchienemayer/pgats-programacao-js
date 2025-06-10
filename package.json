@@ -7,8 +7,7 @@
     "lint": "npm run lint:ts && npm run lint:format",
     "lint:format": "prettier --check --ignore-path .gitignore .",
     "lint:ts": "tsc -b jsconfig.json",
-    "mocha-test": "mocha testes/trabalho-final.js",
-    //"mocha-test": "mocha testes/01-testes.js",
+    "mocha-test": "mocha testes/01-testes.js",
     "start": "lite-server",
     "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
     "test:mutation": "npx stryker run"
