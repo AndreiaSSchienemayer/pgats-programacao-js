@@ -1,16 +1,19 @@
 {
+  "name": "trabalho final ci e cd",
+  "version": "1.0.0",
   "type": "module",
+  "scripts": {
+    "e2e": "npx mocha Testes/01-testes.js",
+    "lint": "npm run lint:ts && npm run lint:format",
+    "lint:format": "prettier --check --ignore-path .gitignore .",
+    "lint:ts": "tsc -b jsconfig.json",
+    "mocha-test": "mocha",
+    "start": "lite-server",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
+    "test:mutation": "npx stryker run"
+  },
   "devDependencies": {
     "@playwright/test": "^1.52.0",
     "mocha": "^11.2.2"
-  },
-  "scripts": {
-    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
-    "test:mutation": "npx stryker run",
-    "start": "lite-server",
-    "lint": "npm run lint:ts && npm run lint:format",
-    "lint:ts": "tsc -b jsconfig.json",
-    "lint:format": "prettier --check --ignore-path .gitignore .",
-    "e2e": "npx mocha Testes/01-testes.js"    
   }
 }
